@@ -26,7 +26,8 @@ func main() {
 	// 字符串
 	s := "string"
 	s = "data"
-	fmt.Println(s[1])
+	s = s + " world"
+	fmt.Println(s)
 	c := []byte(s)
 	c[0] = 'g'
 	s2 := string(c)
