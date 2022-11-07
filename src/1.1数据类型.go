@@ -50,4 +50,18 @@ func main() {
 	sli1 = append(sli1, 10)
 	fmt.Println(len(sli1))
 	fmt.Println(cap(sli1))
+	// map
+	d := map[string]int{"white": 0, "black": 1, "red": 2, "blue": 3, "green": 4, "purple": 5}
+	fmt.Println(d)
+	fmt.Println(d)
+	fmt.Println(d)
+	delete(d, "white")
+	fmt.Println(d)
+	delete(d, "sfd")
+	val, ok := d["green"]
+	if ok {
+		fmt.Println(val)
+	} else {
+		fmt.Println(val)
+	}
 }
