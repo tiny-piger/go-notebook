@@ -1,0 +1,2 @@
+# interface
+从定义来看，interface是一组method的组合。通过interface来定义对象的行为。
