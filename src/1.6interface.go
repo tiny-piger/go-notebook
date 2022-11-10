@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"reflect"
 	"strconv"
 )
 
@@ -113,4 +114,15 @@ func main() {
 		}
 	}
 
+	// 变量类型
+	type Test struct{}
+	v := Test{}
+	str := "hello"
+	Print(v)
+	Print(str)
+}
+
+func Print(v interface{}) {
+	fmt.Println(v)
+	fmt.Println(reflect.TypeOf(v))
 }
